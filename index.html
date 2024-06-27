@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game By Rahul</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- this is an scoreboard section code -->
+    <div id="scorecont" class="scoreboard">
+        <div class="gamenames">
+            <h2>ROCK</h2>
+            <h2>PAPER</h2>
+            <h2>SCISSORS</h2>
+        </div>
+        <div class="scorecontainer">
+            <div class="scorebox scorebox1">
+                <p>COMPUTER<br> SCORE</p>
+                <h1 class="score" id="compscorebox">0</h1>
+            </div>
+            <div class="scorebox">
+                <p>YOUR<br> SCORE</p>
+                <h1 class="score" id="yourscorebox">0</h1>
+            </div>
+        </div>
+    </div>
+    <!-- this is an Choices box section code -->
+    <div id="choiceContainer" class="choicecontainer">
+        <div class="choice stonebox"><img class="stoneimg" src="./Images/stone.png"></div>
+        <p class="divider1">.</p>
+        <div class="choice scissorbox"><img class="scissorimg" src="./Images/Scissor.png"></div>
+        <div class="papermaincont">
+            <p class="divider2">.</p>
+            <p class="divider3">.</p>
+            <div class="choice paperbox"><img class="paperimg" src="./Images/paper.png"></div>
+        </div>
+    </div>
+
+     <!-- this is an Choices result section code -->
+
+     <div id="resultidbox" class="resultbox">
+        <div id="userresult" class="userslt"></div>
+        <div class="restxts">
+            <h2 id="wintxt">YOU WIN</h2>
+            <h3 class="tiehide">AGAINST PC</h3>
+            <button id="playagainbtn">PLAY AGAIN</button>
+        </div>
+        <div id="compresult" class="comprslt"></div>
+     </div>   
+
+     <!--rules & next button code-->
+    <div class="rulesbox">
+        <div id="rulesshow" class="rulescontainer">
+            <button onclick="rhide()" id="clsrules">X</button>
+            <h1 class="ruleh1">Game Rules</h1>
+            <ul class="square">
+                <li class="liststyle">Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li class="liststyle">Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                <li class="liststyle">Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li class="liststyle">If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+        </div>
+        <button onclick="congshow()" id="nextbtn">NEXT</button>
+        <button onclick="rshow()" id="rulesbtn">RULES</button>
+    </div>
+    <!-- congrates section -->
+
+    <div id="congratssection" class="congratssec">
+        <div class="trophyimg">
+            <img src="./Images/Vector.png">
+        </div>
+        <h1 class="bighurry">HURRAY!!</h1>
+        <h1 class="smallhurry">YOU WON THE GAME</h1>
+        <div class="playbtncong">
+            <button onclick="newgame()" id="playagainbtn2">PLAY AGAIN</button>
+        </div>
+        
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
