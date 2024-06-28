@@ -15,6 +15,7 @@ function congshow() {
 }
 function newgame() {
   document.getElementById("congratssection").style.display = "none";
+  document.getElementById("nextbtn").style.display = "none";
   document.getElementById("choiceContainer").style.display = "flex";
   document.getElementById("scorecont").style.display = "flex";
 }

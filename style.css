@@ -185,10 +185,21 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.rststatic1{
+    position: absolute;
+    top: 50px;
+    right: 110px;
+}
+.rststatic2{
+    position: absolute;
+    top: 50px;
+    left: 110px;
+}
 
 #resultidbox{
     display: none;
 }
+
 .resultbox{
     /* border: 2px solid red; */
     width: 65vw;
